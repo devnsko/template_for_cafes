@@ -1,0 +1,101 @@
+/* =========================================================================
+   Design tokens — "warm editorial"
+   Paper-and-ink palette borrowed from printed menus: espresso, cream,
+   terracotta and brass. Deliberately no pure black, no pure white, no
+   neon gradients.
+   ========================================================================= */
+
+:root {
+  /* ---- Colour ---------------------------------------------------------- */
+  --ink-900: #14100c;
+  --ink-800: #1c1712;
+  --ink-700: #2a221a;
+  --ink-600: #3b3026;
+  --ink-400: #6f6155;
+  --ink-300: #948577;
+
+  --paper-50: #fdfaf5;
+  --paper-100: #f7f0e5;
+  --paper-200: #efe4d3;
+  --paper-300: #e2d2ba;
+
+  --clay-600: #9d4f2c;
+  --clay-500: #b45f36;
+  --clay-400: #c9784d;
+  --brass-500: #c9a227;
+  --brass-400: #d9b75a;
+  --sage-600: #5d6b52;
+
+  /* Semantic */
+  --bg: var(--paper-50);
+  --bg-alt: var(--paper-100);
+  --bg-invert: var(--ink-900);
+  --surface: #ffffff;
+  --text: var(--ink-800);
+  --text-muted: var(--ink-400);
+  --text-invert: var(--paper-100);
+  --text-invert-muted: #b9ab99;
+  --accent: var(--clay-500);
+  --accent-strong: var(--clay-600);
+  --accent-warm: var(--brass-400);
+  --line: rgba(42, 34, 26, 0.14);
+  --line-invert: rgba(247, 240, 229, 0.18);
+  --focus: var(--clay-500);
+
+  --success: #4f6f4a;
+  --danger: #a3392b;
+
+  /* ---- Typography ------------------------------------------------------ */
+  --font-display: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-body: 'Karla', ui-sans-serif, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-script: 'Allura', 'Fraunces', cursive;
+
+  --step--1: clamp(0.82rem, 0.79rem + 0.14vw, 0.9rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.09rem);
+  --step-1: clamp(1.2rem, 1.12rem + 0.4vw, 1.45rem);
+  --step-2: clamp(1.5rem, 1.34rem + 0.8vw, 2rem);
+  --step-3: clamp(1.9rem, 1.6rem + 1.5vw, 2.9rem);
+  --step-4: clamp(2.4rem, 1.8rem + 3vw, 4.4rem);
+  --step-5: clamp(3rem, 2rem + 5vw, 6.5rem);
+
+  --tracking-label: 0.22em;
+
+  /* ---- Space & shape --------------------------------------------------- */
+  --space-2xs: 0.375rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1.25rem;
+  --space-md: 2rem;
+  --space-lg: 3.25rem;
+  --space-xl: 5rem;
+  --space-2xl: clamp(4.5rem, 9vw, 8.5rem);
+
+  --measure: 62ch;
+  --container: 1200px;
+  --container-narrow: 860px;
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 1px 2px rgba(20, 16, 12, 0.06), 0 4px 12px rgba(20, 16, 12, 0.05);
+  --shadow-md: 0 12px 32px rgba(20, 16, 12, 0.1);
+  --shadow-lg: 0 28px 60px rgba(20, 16, 12, 0.18);
+
+  --header-h: 78px;
+
+  /* ---- Motion ---------------------------------------------------------- */
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 180ms;
+  --dur: 320ms;
+  --dur-slow: 700ms;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-h: 66px;
+  }
+}

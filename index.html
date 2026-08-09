@@ -1,16 +1,39 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#14100c" />
+    <meta name="color-scheme" content="light" />
+
+    <!--
+      Fallback title only. Every route renders its own <title>, description and
+      Open Graph tags through <Seo>; React 19 hoists them into <head> ahead of
+      this one, so a second description here would only duplicate them.
+    -->
+    <title>Bistro — rezerwacje i menu</title>
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website</title>
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://ik.imagekit.io" crossorigin />
+    <link rel="dns-prefetch" href="https://ik.imagekit.io" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;500;600;700&display=swap"
+    />
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <p style="padding: 2rem; font-family: Georgia, serif">
+        Ta strona wymaga JavaScriptu. Rezerwacje przyjmujemy również telefonicznie:
+        <a href="tel:+48888888888">+48 888 888 888</a>.
+      </p>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

@@ -1,0 +1,16 @@
+{
+  "name": "Bistro — rezerwacje i menu",
+  "short_name": "Bistro",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdfaf5",
+  "theme_color": "#14100c",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

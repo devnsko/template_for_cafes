@@ -1,0 +1,197 @@
+.reservation {
+  position: relative;
+  background-color: var(--bg);
+  scroll-margin-top: var(--header-h);
+}
+
+.reservation__grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .reservation__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- Aside -------------------------------------------------------------- */
+
+.reservation__lede {
+  max-width: 40ch;
+  margin-top: var(--space-sm);
+  color: var(--text-muted);
+}
+
+.reservation__facts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin: var(--space-md) 0 0;
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--line);
+  list-style: none;
+  font-size: 0.95rem;
+}
+
+.reservation__facts li {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.reservation__facts svg {
+  margin-top: 0.28rem;
+  color: var(--accent);
+}
+
+.reservation__facts address {
+  font-style: normal;
+  color: var(--text-muted);
+}
+
+.reservation__hours-row {
+  display: block;
+  color: var(--text-muted);
+}
+
+/* ---- Card --------------------------------------------------------------- */
+
+.reservation__card {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.field-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-sm);
+}
+
+@media (max-width: 560px) {
+  .field-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0;
+}
+
+.field-grid + .field {
+  margin-top: var(--space-sm);
+}
+
+.field label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-600);
+}
+
+.field__optional {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--text-muted);
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  background-color: var(--paper-50);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  font-size: 0.98rem;
+  transition:
+    border-color var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur-fast) var(--ease-out);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 5.5rem;
+}
+
+.field input:hover,
+.field textarea:hover {
+  border-color: var(--ink-300);
+}
+
+.field input:focus-visible,
+.field textarea:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(180, 95, 54, 0.16);
+}
+
+.field input[aria-invalid='true'] {
+  border-color: var(--danger);
+}
+
+.field__error {
+  font-size: 0.8rem;
+  color: var(--danger);
+}
+
+.field__honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+/* ---- Submit & states ---------------------------------------------------- */
+
+.reservation__submit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs) var(--space-sm);
+  margin-top: var(--space-md);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--line);
+}
+
+.reservation__small {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.reservation__alert {
+  margin-top: var(--space-xs);
+  padding: 0.75rem 0.9rem;
+  background-color: rgba(163, 57, 43, 0.08);
+  border-left: 3px solid var(--danger);
+  border-radius: var(--radius-xs);
+  font-size: 0.9rem;
+  color: var(--danger);
+}
+
+.reservation__done {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  min-height: 18rem;
+  justify-content: center;
+}
+
+.reservation__done-title {
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--accent);
+}
+
+.reservation__done p {
+  max-width: 46ch;
+  color: var(--text-muted);
+}
