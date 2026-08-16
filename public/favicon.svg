@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Bistro">
+  <rect width="64" height="64" rx="14" fill="#14100C" />
+  <circle cx="32" cy="32" r="17" fill="none" stroke="#F7F0E5" stroke-width="2" />
+  <circle cx="32" cy="32" r="10.5" fill="none" stroke="#D9B75A" stroke-width="1.25" opacity="0.8" />
+  <g stroke="#B45F36" stroke-width="2.4" stroke-linecap="round">
+    <path d="M23.5 26.5v11" />
+    <path d="M40.5 26.5v11" />
+  </g>
+  <path
+    d="M23.5 26.5c-2.6 0-4.2-2-4.2-4.6V16"
+    fill="none"
+    stroke="#B45F36"
+    stroke-width="2.4"
+    stroke-linecap="round"
+  />
+  <path
+    d="M40.5 26.5c2.6 0 4.2-2 4.2-4.6V16"
+    fill="none"
+    stroke="#B45F36"
+    stroke-width="2.4"
+    stroke-linecap="round"
+  />
+</svg>

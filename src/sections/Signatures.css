@@ -1,0 +1,35 @@
+.signatures {
+  background-color: var(--bg-alt);
+  scroll-margin-top: var(--header-h);
+}
+
+.signatures__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: var(--space-sm) var(--space-md);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--line);
+}
+
+.signatures__note {
+  max-width: 34ch;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.signatures__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  gap: var(--space-md) var(--space-sm);
+  margin: var(--space-lg) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.signatures__footer {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-lg);
+}

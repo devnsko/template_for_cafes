@@ -1,0 +1,84 @@
+.dish {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.dish__media {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background-color: var(--paper-200);
+}
+
+.dish__media img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: scale var(--dur-slow) var(--ease-out);
+}
+
+.dish:hover .dish__media img {
+  scale: 1.05;
+}
+
+.dish__tags {
+  position: absolute;
+  left: 0.7rem;
+  top: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dish__tags li {
+  padding: 0.25rem 0.55rem;
+  background-color: rgba(20, 16, 12, 0.78);
+  color: var(--paper-100);
+  border-radius: var(--radius-pill);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  backdrop-filter: blur(4px);
+}
+
+.dish__body {
+  padding-top: 0.9rem;
+}
+
+.dish__name {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: 1.12rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Classic printed-menu dot leader between name and price. */
+.dish__leader {
+  flex: 1 1 auto;
+  min-width: 1.5rem;
+  height: 1px;
+  margin-bottom: 0.28em;
+  border-bottom: 1px dotted var(--line);
+}
+
+.dish__price {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--accent-strong);
+  white-space: nowrap;
+}
+
+.dish__desc {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}

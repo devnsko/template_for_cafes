@@ -22,4 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-README.md
+
+# Local env
+.env
+.env.local
+.env.*.local

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://template-for-cafes.onrender.com/sitemap.xml
